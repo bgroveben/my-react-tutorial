@@ -5,4 +5,5 @@ https://github.com/reactjs/react-tutorial
 and here:  
 https://github.com/facebook/react  
 
-Let's see how this goes.
+To run this app (don't get excited, there's nothing to see yet):  
+=> node server.js
