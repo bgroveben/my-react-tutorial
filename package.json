@@ -1,0 +1,23 @@
+{
+  "name": "my-react-tutorial",
+  "version": "1.0.0",
+  "description": "My own damn React tutorial",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bgroveben/my-react-tutorial.git"
+  },
+  "keywords": [
+    "react",
+    "tutorial"
+  ],
+  "author": "bgroveben",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bgroveben/my-react-tutorial/issues"
+  },
+  "homepage": "https://github.com/bgroveben/my-react-tutorial#readme"
+}
