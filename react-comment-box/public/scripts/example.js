@@ -14,3 +14,7 @@ ReactDOM.render(
   <CommentBox />,
   document.getElementById('content')
 );
+/*
+It is important that ReactDOM.render remain at the bottom of the script for this tutorial
+ReactDOM.render should only be called after the composite components have been defined.
+*/
