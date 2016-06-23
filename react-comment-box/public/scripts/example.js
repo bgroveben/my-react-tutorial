@@ -5,6 +5,9 @@ var CommentBox = React.createClass({
       // Native HTML element names start with a lowercase letter
       <div className="commentBox">
         Hello, World! I am a CommentBox.
+        <h1>Comments</h1>
+        <CommentList />
+        <CommentForm />
       </div>
     );
   }
