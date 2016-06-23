@@ -14,3 +14,5 @@ OR
 ```sh
 npm start
 ```
+
+Then go to `localhost:8080/react-comment-box/public/index.html`
