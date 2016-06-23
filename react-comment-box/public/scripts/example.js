@@ -9,6 +9,29 @@ var CommentBox = React.createClass({
     );
   }
 });
+
+// CommentList component that will be used within CommentBox
+var CommentList = React.createClass({
+  render: function() {
+    return (
+      <div className="commentList">
+        Hello, World! I am a CommentList.
+      </div>
+    );
+  }
+});
+
+// CommentForm component that will be used within CommentBox
+var CommentForm = React.createClass({
+  render: function() {
+    return (
+      <div className="commentForm">
+        Hello, World! I am a CommentForm.
+      </div>
+    );
+  }
+});
+
 ReactDOM.render(
   // Custom React class names begin with an uppercase letter
   <CommentBox />,
