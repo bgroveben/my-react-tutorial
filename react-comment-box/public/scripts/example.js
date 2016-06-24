@@ -71,7 +71,7 @@ var Comment = React.createClass({
 
 ReactDOM.render(
   // Custom React class names begin with an uppercase letter
-  <CommentBox data={data} />,
+  <CommentBox url="/api/comments" />,
   document.getElementById('content')
 );
 /*
