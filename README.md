@@ -12,4 +12,4 @@ Example:
 http://localhost:8080/examples/basic/index.html
 
 I am here:  
-https://facebook.github.io/react/docs/tutorial.html#component-properties
+https://facebook.github.io/react/docs/tutorial.html#fetching-from-the-server
