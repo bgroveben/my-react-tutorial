@@ -12,6 +12,12 @@ var CommentBox = React.createClass({
   }
 });
 
+// Render a blob of JSON data for use in the comment list
+var data = [
+  {id: 1, author: "Pete Hunt", text: "This is one comment"},
+  {id: 2, author: "Jordan Walke", text: "This is *another* comment"}
+];
+
 // CommentList component that will be used within CommentBox
 var CommentList = React.createClass({
   render: function() {
