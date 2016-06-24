@@ -1,11 +1,14 @@
 // CommentBox component, which is just a simple <div>
 var CommentBox = React.createClass({
+  getInitialState: function() {
+    return {data: []};
+  },
   render: function() {
     return (
       // Native HTML element names start with a lowercase letter
       <div className="commentBox">
         <h1>Comments</h1>
-        <CommentList data={this.props.data} />
+        <CommentList data={this.state.data} />
         <CommentForm />
       </div>
     );
@@ -82,4 +85,10 @@ ReactDOM.render should only be called after the composite components have been d
 Data passed in from a parent component is available as a 'property' on the child component.
 These 'properties' are accessed through this.props.
 We access named attributes passed to the component as keys on this.props and any nested elements as this.props.children.
+*/
+/*
+Props are immutable; they are passed from the parent and are 'owned' by the parent.
+To implement interactions, we introduce mutable state to the component.
+this.state is private to the component and can be changed by calling this.setState().
+When the state updates, the component re-renders itself.
 */
