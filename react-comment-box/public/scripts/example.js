@@ -38,12 +38,14 @@ var CommentForm = React.createClass({
 // Using props, we will be able to read the data passed to the Comment from the CommentList
 var Comment = React.createClass({
   render: function() {
+    // Add Markdown
+    var md = new Remarkable();
     return (
       <div className="comment">
         <h2 className="commentAuthor">
           {this.props.author}
         </h2>
-        {this.props.children}
+        {md.render(this.props.children.toString())}
       </div>
     );
   }
