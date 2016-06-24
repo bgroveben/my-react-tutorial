@@ -1,9 +1,6 @@
 // CommentBox component, which is just a simple <div>
 var CommentBox = React.createClass({
-  getInitialState: function() {
-    return {data: []};
-  },
-  componentDidMount: function() {
+  loadCommentsFromServer: function() {
     $.ajax({
       url: this.props.url,
       dataType: 'json',
@@ -15,6 +12,15 @@ var CommentBox = React.createClass({
         console.error(this.props.url, status, err.toString());
       }.bind(this)
     });
+  },
+  // getInitialState executes exactly once during the lifecycle of the component and sets the initial state
+  getInitialState: function() {
+    return {data: []};
+  },
+  // componentDidMount is a method called automatically by React after a component is rendered for the first time
+  componentDidMount: function() {
+    this.loadCommentsFromServer();
+    setInterval(this.loadCommentsFromServer, this.props.pollInterval);
   },
   render: function() {
     return (
@@ -87,7 +93,7 @@ var Comment = React.createClass({
 
 ReactDOM.render(
   // Custom React class names begin with an uppercase letter
-  <CommentBox url="/api/comments" />,
+  <CommentBox url="/api/comments" pollInterval={2000} />,
   document.getElementById('content')
 );
 /*
