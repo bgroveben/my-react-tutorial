@@ -37,15 +37,21 @@ var CommentForm = React.createClass({
 
 // Using props, we will be able to read the data passed to the Comment from the CommentList
 var Comment = React.createClass({
-  render: function() {
-    // Add Markdown
+  // Bypass React security and use Remarkable to insert raw HTML
+  // Using this feature relies on Remarkable to automatically strip HTML markup and insecure links from the output
+  rawMarkup: function() {
     var md = new Remarkable();
+    var rawMarkup = md.render(this.props.children.toString());
+    return { __html: rawMarkup };
+  },
+
+  render: function() {
     return (
       <div className="comment">
         <h2 className="commentAuthor">
           {this.props.author}
         </h2>
-        {md.render(this.props.children.toString())}
+        <span dangerouslySetInnerHTML={this.rawMarkup()} />
       </div>
     );
   }
