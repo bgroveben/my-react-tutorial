@@ -5,7 +5,7 @@ var CommentBox = React.createClass({
       // Native HTML element names start with a lowercase letter
       <div className="commentBox">
         <h1>Comments</h1>
-        <CommentList />
+        <CommentList data={this.props.data} />
         <CommentForm />
       </div>
     );
@@ -65,7 +65,7 @@ var Comment = React.createClass({
 
 ReactDOM.render(
   // Custom React class names begin with an uppercase letter
-  <CommentBox />,
+  <CommentBox data={data} />,
   document.getElementById('content')
 );
 /*
