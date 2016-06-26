@@ -53,12 +53,37 @@ var CommentList = React.createClass({
 });
 
 // CommentForm component that will be used within CommentBox
+// Controlled Components -- https://facebook.github.io/react/docs/forms.html#controlled-components
+// We will be using this.state to save the user's input as it is entered
 var CommentForm = React.createClass({
+  // Define an initial state with 2 properties 'author' and 'text' and set them to be empty strings
+  getInitialState: function() {
+    return {author: '', text: ''};
+  },
+  // Tell onChange event handlers (in the <input> elements) what to do
+  handleAuthorChange: function(e) {
+    this.setState({author: e.target.value});
+  },
+  handleTextChange: function(e) {
+    this.setState({text: e.target.value});
+  },
+  // In the input elements, set the 'value' prop to reflect the state of the component and attach 'onChange' handlers
+  // These <input> elements with a value set are your Controlled Components 
   render: function() {
     return (
       <form className="commentForm">
-        <input type="text" placeholder="Your name" />
-        <input type="text" placeholder="Type something..." />
+        <input
+          type="text"
+          placeholder="Your name"
+          value={this.state.author}
+          onChange={this.handleAuthorChange}
+        />
+        <input
+          type="text"
+          placeholder="Type something..."
+          value={this.state.text}
+          onChange={this.handleTextChange}
+        />
         <input type="submit" value="Post" />
       </form>
     );
