@@ -9,10 +9,4 @@ This is cribbed from the React comment box example from
 node server.js
 ```
 
-OR
-
-```sh
-npm start
-```
-
-Then go to `localhost:8080/react-comment-box/public/index.html`
+Then go to `localhost:3000`
