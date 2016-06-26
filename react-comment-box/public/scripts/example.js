@@ -67,11 +67,21 @@ var CommentForm = React.createClass({
   handleTextChange: function(e) {
     this.setState({text: e.target.value});
   },
+  // Listen for the form's submit event and clear it ('it' being the form)
+  handleSubmit: function(e) {
+    e.preventDefault();var author = this.state.author.trim();
+    var text = this.state.text.trim();
+    if (!text || !author) {
+      return;
+    }
+    // Send request to the server
+    this.setState({author: '', text: ''});
+  }
   // In the input elements, set the 'value' prop to reflect the state of the component and attach 'onChange' handlers
-  // These <input> elements with a value set are your Controlled Components 
+  // These <input> elements with a value set are your Controlled Components
   render: function() {
     return (
-      <form className="commentForm">
+      <form className="commentForm" onSubmit={this.handleSubmit}>
         <input
           type="text"
           placeholder="Your name"
