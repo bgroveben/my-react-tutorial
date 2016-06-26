@@ -79,9 +79,9 @@ var CommentForm = React.createClass({
     if (!text || !author) {
       return;
     }
-    // Send request to the server
+    this.props.onCommentSubmit({author: author, text: text});
     this.setState({author: '', text: ''});
-  }
+  },
   // In the input elements, set the 'value' prop to reflect the state of the component and attach 'onChange' handlers
   // These <input> elements with a value set are your Controlled Components
   render: function() {
