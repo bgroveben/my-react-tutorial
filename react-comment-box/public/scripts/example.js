@@ -1,4 +1,5 @@
 // CommentBox component, which is just a simple <div>
+// CommentBox owns the state that represents the list of comments
 var CommentBox = React.createClass({
   loadCommentsFromServer: function() {
     $.ajax({
@@ -12,6 +13,9 @@ var CommentBox = React.createClass({
         console.error(this.props.url, status, err.toString());
       }.bind(this)
     });
+  },
+  handleCommentSubmit: function(comment) {
+    // Submit to the server and refresh the list
   },
   // getInitialState executes exactly once during the lifecycle of the component and sets the initial state
   getInitialState: function() {
@@ -28,7 +32,7 @@ var CommentBox = React.createClass({
       <div className="commentBox">
         <h1>Comments</h1>
         <CommentList data={this.state.data} />
-        <CommentForm />
+        <CommentForm onCommentSubmit={this.handleCommentSubmit} />
       </div>
     );
   }
@@ -69,7 +73,8 @@ var CommentForm = React.createClass({
   },
   // Listen for the form's submit event and clear it ('it' being the form)
   handleSubmit: function(e) {
-    e.preventDefault();var author = this.state.author.trim();
+    e.preventDefault();
+    var author = this.state.author.trim();
     var text = this.state.text.trim();
     if (!text || !author) {
       return;
