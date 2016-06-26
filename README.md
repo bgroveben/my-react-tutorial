@@ -10,8 +10,3 @@ To run this app, open your terminal, make sure you are in the same directory as 
 Open your browser to localhost:8080 and type the name and location of the file you wish to run.  
 Example:  
 http://localhost:8080/examples/basic/index.html
-
-I am here:  
-https://facebook.github.io/react/docs/tutorial.html#adding-new-comments
-
-I also need to build a server for react-comment-box that can follow the directions in example.js.
