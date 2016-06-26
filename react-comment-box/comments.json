@@ -18,5 +18,20 @@
         "id": 1420070400000,
         "author": "Paul O’Shannessy",
         "text": "React is *great*!"
+    },
+    {
+        "id": 1466933334528,
+        "author": "Dave Awesome",
+        "text": "This is Awesome."
+    },
+    {
+        "id": 1466933653242,
+        "author": "Olivia Optimistic",
+        "text": "This is an optimistically added comment."
+    },
+    {
+        "id": 1466933763193,
+        "author": "Amy Addscomment",
+        "text": "I wanna comment too."
     }
 ]
