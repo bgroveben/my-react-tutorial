@@ -16,6 +16,18 @@ var CommentBox = React.createClass({
   },
   handleCommentSubmit: function(comment) {
     // Submit to the server and refresh the list
+    $.ajax({
+      url: this.props.url,
+      dataType: 'json',
+      type;'POST',
+      data: comment,
+      success: function(data) {
+        this.setState({data: data});
+      }.bind(this),
+      error: function(xhr, status, err) {
+        console.error(this.props.url, status, err.toString());
+      }.bind(this)
+    });
   },
   // getInitialState executes exactly once during the lifecycle of the component and sets the initial state
   getInitialState: function() {
