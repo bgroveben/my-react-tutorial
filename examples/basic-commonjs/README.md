@@ -7,3 +7,5 @@ npm start
 ```  
 
 to produce `bundle.js` with example code and React.
+
+Now fire up your server and go to index.html.
