@@ -1,4 +1,6 @@
-# This file courtesy of https://github.com/github/gitignore/blob/master/Node.gitignore
+bundle.js
+
+# The rest of this file courtesy of https://github.com/github/gitignore/blob/master/Node.gitignore
 
 # Logs
 logs
