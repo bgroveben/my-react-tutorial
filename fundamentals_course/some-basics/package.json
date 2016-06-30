@@ -4,7 +4,7 @@
   "description": "Setting up your first React component with NPM, Babel, and Webpack",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "ava 'app/**/*.test.js' --verbose --require .other/setup-ava-tests.js"
   },
   "repository": {
     "type": "git",
