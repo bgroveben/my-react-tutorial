@@ -1,0 +1,25 @@
+{
+  "name": "some-basics",
+  "version": "1.0.0",
+  "description": "Setting up your first React component with NPM, Babel, and Webpack",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bgroveben/my-react-tutorial.git"
+  },
+  "keywords": [
+    "NPM",
+    "Babel",
+    "React",
+    "tutorial"
+  ],
+  "author": "bgroveben",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bgroveben/my-react-tutorial/issues"
+  },
+  "homepage": "https://github.com/bgroveben/my-react-tutorial#readme"
+}
