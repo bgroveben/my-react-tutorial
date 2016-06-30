@@ -10,4 +10,4 @@ The code that I have in this repo is from the free (for the price of an email ad
 
 
 I am here:  
-Nested Components and Props
+this.props.children

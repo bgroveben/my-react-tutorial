@@ -13,3 +13,12 @@ var Helloworld = React.createClass({
   }
 });
 ReactDOM.render(<HelloWorld />, document.getElementById('app'));
+
+/*
+React code should abide by the acronym FIRST
+Focused
+Independent
+Reusable
+Small
+Testable
+*/
