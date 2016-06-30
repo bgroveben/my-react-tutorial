@@ -19,7 +19,7 @@ module.exports = {
   // Step 2
   module: {
     loaders: [
-      {test: /\.coffee$/, exclude: /node-modules/, loader: "coffee-loader"}
+      {test: /\.coffee$/, exclude: /node-modules/, loader: "babel-loader"}
     ]
   },
   // Step 3

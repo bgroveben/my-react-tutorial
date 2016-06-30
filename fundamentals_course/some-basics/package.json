@@ -23,14 +23,12 @@
   },
   "homepage": "https://github.com/bgroveben/my-react-tutorial#readme",
   "dependencies": {
-    "coffee-script": "^1.10.0",
     "jquery": "^3.0.0"
   },
   "devDependencies": {
     "babel-core": "^6.10.4",
     "babel-loader": "^6.2.4",
     "babel-preset-react": "^6.11.1",
-    "coffee-loader": "^0.7.2",
     "html-webpack-plugin": "^2.21.0",
     "webpack": "^1.13.1"
   }
