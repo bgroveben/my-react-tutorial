@@ -3,7 +3,9 @@
 I'm learning React my own damn way, but I'm going to be cribbing and copying stuff from here:  
 https://github.com/reactjs/react-tutorial  
 and here:  
-https://github.com/facebook/react  
+https://github.com/facebook/react
+and here:  
+http://courses.reactjsprogram.com/courses/reactjsfundamentals 
 
 To run this app, open your terminal, make sure you are in the same directory as the server.js file, and type:  
 => node server.js  
