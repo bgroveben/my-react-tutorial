@@ -5,7 +5,7 @@ Webpack needs to know three things:
 3) To which location it should save the newly transformed code.
 */
 
-var HtmlWebpackPlugin = require('html-webpack-plugin');
+var HtmlWebpackPlugin = require('html-webpack-plugin')
 var HTMLWebpackPluginConfig = new HtmlWebpackPlugin({
   template: __dirname + '/app/index.html',
   filename: 'index.html',
