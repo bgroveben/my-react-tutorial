@@ -5,6 +5,9 @@ Webpack needs to know three things:
 3) To which location it should save the newly transformed code.
 */
 
+var HtmlWebpackPlugin = require('html-webpack-plugin');
+
+
 module.exports = {
   // Step 1
   entry: [
