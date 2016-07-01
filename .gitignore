@@ -1,4 +1,6 @@
 bundle.js
+*.bundle.js
+.DS_Store
 
 # The rest of this file courtesy of https://github.com/github/gitignore/blob/master/Node.gitignore
 
