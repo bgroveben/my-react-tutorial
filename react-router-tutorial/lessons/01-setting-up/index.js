@@ -1,4 +1,4 @@
 import React from 'react';
 import { render } from 'react-dom';
 import App from './modules/App';
-render(<App/>, doucument.getElementById('app'));
+render(<App/>, document.getElementById('app'));
