@@ -7,7 +7,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spre
 */
 
 import React from 'react';
-import { Link } fro 'react-router';
+import { Link } from 'react-router';
 
 export default React.createClass({
   render() {
