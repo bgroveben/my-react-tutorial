@@ -12,11 +12,10 @@ Nest About and Repos components inside of App so that we can share navigation wi
 render((
   <Router history={hashHistory}>
     <Route path="/" component={App}>
-      {/* Make About and Repos children of App */}
       <Route path="/about" component={About} />
-      {/* add new route with URL parameters specified */}
-      <Route path="/repos/:userName/:repoName" component={Repo} />
-      <Route path="/repos" component={Repos} />
+      <Route path="/repos" component={Repos}>
+        <Route path="/repos/:userName/:repoName" component={Repo} />
+      </Route>
     </Route>
   </Router>
 ), document.getElementById('app'));
