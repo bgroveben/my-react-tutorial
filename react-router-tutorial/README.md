@@ -10,4 +10,4 @@ See [Lesson 1 - Setting Up](https://github.com/reactjs/react-router-tutorial/les
 
 Each lesson is a fully runnable app with all code from the previous lesson, so you can `cd lessons/<lesson-folder>`, npm install, and then run the appropriate NPM scripts for each lesson from within the lesson folder.
 
-I am on [Lesson 8 - Index Routes ](https://github.com/reactjs/react-router-tutorial/tree/master/lessons/08-index-routes).
+I am on [Lesson 11 - Production-ish Server ](https://github.com/reactjs/react-router-tutorial/tree/master/lessons/11-productionish-server).
