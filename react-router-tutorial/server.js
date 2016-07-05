@@ -5,6 +5,7 @@ var path = require('path');
 var compression = require('compression');
 
 var app = express();
+app.use(compression());
 // serve our static content and files like style.css
 app.use(express.static(path.join(__dirname, 'public')));
 // send all requests to index.html so browserHistory in React Router works
