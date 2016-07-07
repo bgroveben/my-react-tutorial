@@ -50,7 +50,7 @@ function renderPage(appHtml) {
     <html>
       <head>
         <meta charset="utf-8">
-        <title>Not My First React Router App</title>
+        <title>React Router App</title>
         <link rel="stylesheet" href="/style.css" />
       </head>
       <body>
