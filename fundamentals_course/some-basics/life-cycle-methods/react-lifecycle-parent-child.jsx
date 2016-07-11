@@ -29,6 +29,15 @@ const ParentComponent = React .createClass({
       <ChildComponent text={this.state.text} />
       </div>
     );
+  },
+  componentDidMount: function() {
+    console.log("ParentComponent - componentDidMount");
+  },
+  componentWillUnmount: function() {
+    console.log("ParentComponent - componentWillUnmount");
+  },
+  onInputChange: function(event) {
+    this.setState({ text: event.target.value });
   }
 });
 
