@@ -6,4 +6,4 @@ function ConfirmBattle (props) {
   )
 }
 
-module.exports ConfirmBattle;
+module.exports = ConfirmBattle;
