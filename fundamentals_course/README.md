@@ -10,4 +10,4 @@ The code that I have in this repo is from the free (for the price of an email ad
 
 
 I am here:  
-https://gist.github.com/fay-jai/fc8a5093c0b5124d4b2d#file-react-lifecycle-parent-child-jsx
+Video 6
