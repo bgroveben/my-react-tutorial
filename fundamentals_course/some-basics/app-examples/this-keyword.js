@@ -11,6 +11,8 @@
 
 // Implicit Binding
 // Left of the dot (.) at call time
+console.log("Keyword 'this' with Implicit Binding --");
+console.log();
 
 var me = {
   name: "Ben",
@@ -61,4 +63,33 @@ var Person = function(name, age){
 var jim = Person('Jim', 42);
 jim.sayName();
 jim.mother.sayName();
+console.log();
+
+
+// Explicit Binding
+// call, apply, bind
+console.log("Keyword 'this' with Explicit Binding --");
+console.log();
+
+var sayName = function() {
+  console.log('My name is ' + this.name);
+};
+var stacey = {
+  name: 'Stacey',
+  age: 34,
+};
+sayName.call(stacey);
+console.log();
+
+var sayLanguage = function(lang1, lang2, lang3){
+  console.log('My name is ' + this.name + ' and I know ' + lang1 + ', ' + lang2 + ', and ' + lang3 +'.');
+};
+var languages = ['JavaScript', 'Ruby', 'Python'];
+console.log('.call --');
+sayLanguage.call(stacey, languages[0], languages[1], languages[2]);
+console.log('.apply --');
+sayLanguage.apply(stacey, languages);
+console.log('.bind --');
+var newFunc = sayLanguage.bind(stacey, languages[0], languages[1], languages[2]);
+newFunc();
 console.log();
