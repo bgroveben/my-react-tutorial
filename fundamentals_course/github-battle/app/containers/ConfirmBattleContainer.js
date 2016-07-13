@@ -9,7 +9,7 @@ var ConfirmBattleContainer = React.createClass({
   getInitialState: function () {
     return {
       isLoading: true,
-      playerInfo: []
+      playersInfo: [],
     }
   },
   componentDidMount: function () {
@@ -18,7 +18,7 @@ var ConfirmBattleContainer = React.createClass({
       .then(function (players) {
         this.setState({
           isLoading: false,
-          playerInfo: [players[0], players[1]]
+          playersInfo: [players[0], players[1]]
         })
       }.bind(this))
   },
