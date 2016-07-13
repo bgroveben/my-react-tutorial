@@ -11,7 +11,7 @@
 
 // Implicit Binding
 // Left of the dot (.) at call time
-console.log("Keyword 'this' with Implicit Binding --");
+console.log("-- Keyword 'this' with Implicit Binding --");
 console.log();
 
 var me = {
@@ -68,7 +68,7 @@ console.log();
 
 // Explicit Binding
 // call, apply, bind
-console.log("Keyword 'this' with Explicit Binding --");
+console.log("-- Keyword 'this' with Explicit Binding --");
 console.log();
 
 var sayName = function() {
@@ -93,3 +93,39 @@ console.log('.bind --');
 var newFunc = sayLanguage.bind(stacey, languages[0], languages[1], languages[2]);
 newFunc();
 console.log();
+
+
+// new Binding
+console.log("-- Keyword 'this' with keyword 'new' binding --");
+console.log();
+var Animal = function(color, name, type){
+  // when the 'new' keyword is called, JS will create a new object -- this = {}
+  // the following attributes are then bound to 'this'
+  this.color = color;
+  this.name = name;
+  this.type = type;
+};
+var zebra = new Animal('black and white', 'Zorro', 'Zebra');
+console.log(zebra);
+console.log();
+
+
+// window Binding
+// if the keyword 'this' isn't bound by any other method, it defaults to binding to the 'window' object
+/*
+The following code will not work using node to run the file (it won't recognize the 'window' keyword).
+Try it in the browser console or JSBin
+
+console.log("-- Keyword 'this' with window object binding --");
+console.log();
+var sayAge = function(){
+  // 'use strict';
+  console.log(this.age);
+};
+var me = {
+  age: 25
+};
+sayAge();
+window.age = 35;
+sayAge();
+*/
