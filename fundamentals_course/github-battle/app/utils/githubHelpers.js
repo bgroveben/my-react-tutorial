@@ -1,5 +1,6 @@
 var axios = require('axios');
 
+// May need these if I get rate-limited and have to sign up for an API key
 var id = "YOUR_CLIENT_ID";
 var sec = "YOUR_SECRET_ID";
 var param = "?client_id=" + id + "&client_secret=" + sec;
@@ -9,8 +10,8 @@ function getUserInfo (username) {
 }
 
 var helpers = {
-  getPlayersInfo: function () {
-      // fetch some data from GitHub
+  getPlayersInfo: function (players) {
+      
   }
 };
 
