@@ -28,7 +28,7 @@ var Loading = React.createClass({
       text: 'Loading',
       speed: 300
     }
-  }
+  },
   getInitialState: function(){
     this.originalText = this.props.text;
     return {
