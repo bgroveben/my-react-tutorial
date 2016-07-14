@@ -33,12 +33,11 @@ var ConfirmBattleContainer = React.createClass({
   render: function () {
     return (
       <ConfirmBattle
-      isLoading={this.state.isLoading}
-      onInitiateBattle={this.handleInitiateBattle}
-      playersInfo={this.state.playersInfo} />
-    );
+        isLoading={this.state.isLoading}
+        onInitiateBattle={this.handleInitiateBattle}
+        playersInfo={this.state.playersInfo} />
+    )
   }
-
 });
 
 module.exports = ConfirmBattleContainer;
