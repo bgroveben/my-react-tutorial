@@ -2,6 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
+// React supports functional components for types like Square that only consist
+// of a render() method
+/*
 class Square extends React.Component {
   render() {
     return (
@@ -10,6 +13,19 @@ class Square extends React.Component {
       </button>
     );
   }
+}
+*/
+
+// we can replace the whole Square class with this function:
+function Square(props) {
+  return (
+    // note the absence of parens after props.onClick
+    // props.onClick() doesn't work because it would call the function
+    // immediately instead of passing it down
+    <button className="square" onClick={props.onClick}>
+      {props.value}
+    </button>
+  );
 }
 
 class Board extends React.Component {
