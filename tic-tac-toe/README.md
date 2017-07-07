@@ -1,4 +1,4 @@
-## I am [here](https://facebook.github.io/react/tutorial/tutorial.html#storing-a-history)
+## I am [here](https://facebook.github.io/react/tutorial/tutorial.html#showing-the-moves)
 
 ### Interactive Tic-Tac-Toe game from the [React Tutorial: Intro to React](https://facebook.github.io/react/tutorial/tutorial.html).  
 
