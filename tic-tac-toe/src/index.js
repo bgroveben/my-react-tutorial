@@ -35,6 +35,8 @@ class Board extends React.Component {
     super();
     this.state = {
       squares: Array(9).fill(null),
+      // 'X' gets the first move by default
+      xIsNext: true, // toggle boolean value and save the state on each move
     };
   }
 
@@ -44,8 +46,13 @@ class Board extends React.Component {
     // use .slice() to copy the squares array before making changes and to
     // prevent mutating the existing array
     const squares = this.state.squares.slice();
-    squares[i] = 'X';
-    this.setState({squares: squares});
+    // update the handleclick function to flip the value of xIsNext so that X
+    // and O take turns
+    squares[i] = this.state.xIsNext ? 'X' : 'O';
+    this.setState({
+      squares: squares,
+      xIsNext: !this.state.xIsNext,
+    });
   }
 
   renderSquare(i) {
@@ -61,7 +68,8 @@ class Board extends React.Component {
   }
 
   render() {
-    const status = 'Next player: X';
+    // display who's next -- X or O
+    const status = 'Next player: ' + (this.state.xIsNext ? 'X' : 'O');
 
     return (
       <div>
