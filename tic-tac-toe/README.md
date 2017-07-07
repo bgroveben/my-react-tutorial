@@ -1,4 +1,4 @@
-## I am [here](https://facebook.github.io/react/tutorial/tutorial.html#developer-tools)
+## I am [here](https://facebook.github.io/react/tutorial/tutorial.html#functional-components)
 
 ### Interactive Tic-Tac-Toe game from the [React Tutorial: Intro to React](https://facebook.github.io/react/tutorial/tutorial.html).  
 
